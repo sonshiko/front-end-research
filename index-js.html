@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tests</title>
+	<meta charset="UTF-8">
+	<!-- include a file with css to this document -->	
+	<!-- include a file with js to this document -->	
+</head>
+<body>
+	<script>
+		"use strict";
+		let arr = [3,4,1,2,7];
+
+		<!-- first case FOR -->
+		let summArr = 0;
+		for (var i = 0; i < arr.length; i++) {
+			summArr += arr[i];
+		};
+		alert(`The summ of all of the arraay members is = ${summArr}`);
+
+		<!-- second case FOREACH-->
+		let summArr2 = 0;
+		arr.forEach(function(element){
+			summArr2 += element;
+		});
+		alert(`The summ of all of the arraay members is = ${summArr2}`);
+
+		<!-- third case Reduce-->
+		let summArr3 = arr.reduce (function(){
+
+		});
+
+
+	</script>
+</body>
+</html>
